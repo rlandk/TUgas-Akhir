@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+        <h1>Login</h1>
+        <label for="username">Username/email:</label><br>
+        <input type="text/email" name="username" placeholder="masukan username/email:"><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" placeholder="masukan password:"><br>
+        <p class="lupa"><a href="lupa.html">Forgot Password?</a></p>
+        <button type="submit" onclick="Login()"><a href="Home.html" class="login">Login</a></button><br><br>
+        <p class="forgot">Belum punya akun? <a href="signup.html" class="daftar">Daftar</a></p><br></br>
+        </form>
+    </div>
+    <script>
+        function Login() {
+            alert("Anda Berhasil Login")
+        }
+    </script>
+</body>
+
+</html>

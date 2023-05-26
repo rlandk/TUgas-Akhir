@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../asset/yo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 450px;
+}
+
+
+
+.container {
+    margin-top: 100px;
+}
+
+form {
+    border: 2px black solid;
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
+    background-color: #b96300a2;
+    width: 40rem;
+    text-align: center;
+}
+
+
+input {
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    width: 250px;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    padding: 30px;
+}
+
+
+button {
+    width: 100px;
+    height: 5ex;
+    background-color: orange;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: brown;
+}
+
+.Login {
+    color: #FF9F2E;
+}
+
+.daftar {
+    color: black;
+}
+
+.forgot {
+    font-size: 15px;
+}
+
+/* Media Queries */
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}

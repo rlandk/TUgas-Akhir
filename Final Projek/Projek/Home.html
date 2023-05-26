@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Shop</title>
+    
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Martabak<span>Shop</span></a>
+        <div class="navbar-nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Produk</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Contact Us</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+        
+        <!-- Search Form start -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search Form end -->
+        
+        <!-- Shopping Cart start -->
+        <div class="shopping-cart">
+            <h1>History</h1>
+            <div class="cart-item">
+                <img src="../asset/coklat kacang.jpg" alt="Product 1">
+                <div class="item-detail">
+                <h3>Martabak Coklat <br> Kacang</h3>
+                <div class="item-price">IDR 15K</div>
+            </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="../asset/keju.jpg" alt="Product 1">
+            <div class="item-detail">
+                <h3>Martabak Keju</h3>
+                <div class="item-price">IDR 20K</div>
+            </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="../asset/telor.jpg" alt="Product 1">
+                <div class="item-detail">
+                    <h3>Martabak Telor</h3>
+                    <div class="item-price">IDR 25K</div>
+                </div>
+                    <i data-feather="trash-2" class="remove-item"></i>
+                </div>
+            </div>
+            <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar End -->
+    
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Nikmati Hari Hari Mu Dengan Memakan Martabak</h1>
+            <a href="#menu" class="cta">Order Now</a>
+        </main>
+    </section>
+    <!-- Hero section end -->
+    
+    
+    <!-- Product Section start -->
+    <section id="products" class="products">
+        <h2>Product</h2>
+        
+        <div class="row">
+            <div class="content">
+                <p class="text"><b>Martabak berasal dari kata "mutabar" yang merupakan gabungan dua kata. 
+                    Kata tersebut adalah "muta" yang berarti telur
+                    dan "bar" yang merupakan singkatan kata "barota" atau "bratha" alias roti</b></p>
+            </div>
+        </div>
+    </section>
+    <!--Product Section end -->
+    
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+        <h2><b>Menu</b></h2>
+        <div class="row">
+            <div class="menu-card">
+                <img src="../asset/keju.jpg" alt="martabak keju" class="menu-card-img">
+                <h3 class="menu-card-title"><b>Martabak Keju</b></h3>
+                <p class="menu-card-price"><b>IDR 20K</b></p><br>
+                <h3><a href="#" class="buy" onclick="keju()"><b>Order Now</b></a></h3>
+            </div>
+            <div class="menu-card">
+                <img src="../asset/telor.jpg" alt="martabak telor" class="menu-card-img">
+                <h3 class="menu-card-title"> <b> Martabak Telor</b></h3>
+                <p class="menu-card-price"> <b> IDR 25K </b></p><br>
+                <h3><a href="#" class="buy" onclick="telor()"><b>Order Now</b></a></h3>
+            </div>
+            
+            <div class="menu-card">
+                <img src="../asset/coklat kacang.jpg" alt="martabak coklat kacang" class="menu-card-img">
+                <h3 class="menu-card-title"> <b> Martabak Coklat Kacang </b></h3>
+                <p class="menu-card-price"><b>IDR 15K</b></p><br>
+                <h3 ><a href="#shopping-cart-button" class="buy"  onclick="coka()"><b>Order Now</b></a></h3>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section End -->
+    
+    
+    <!-- Footer Start -->
+    <footer id="about">
+        <h2>Contact Us</h2>
+        <div class="socials">
+            <a href="https://www.instagram.com/rlanck_21/"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+        
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#products">Produk</a>
+            <a href="#menu">Menu</a>
+        </div>
+        
+        <div class="credit">
+            <p>Created by <a href="#">rlanck_21</a>. | &copy; 2023.</p>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+    <!-- Feather Icon -->
+    <script>
+        feather.replace()
+    </script>
+    
+</body>
+</html>
